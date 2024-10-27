@@ -26,6 +26,8 @@
     --fontweight-bold: 600;
     --fontweight-extrabold: 800;
 
+    --background-color: #0B0F19;
+
     --color-black: #000;
     --color-white: #FFF;
     --color-success: #22C55E;
@@ -137,4 +139,20 @@ nav a:visited {
 
 .bg__dark {
     background-color: var(--color-gray-100);
+}
+
+.bg__light {
+    background-color: hsla(0, 100%, 100%, 4%)
+}
+
+.dark-theme {
+    background-color: var(--color-gray-900);
+}
+
+.light-theme {
+    background-color: var(--color-white);
+}
+
+.App {
+    background-color: var(--background-color);
 }
