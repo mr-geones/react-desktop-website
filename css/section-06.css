@@ -1,0 +1,112 @@
+#section-06 {
+  display: grid;
+  grid-template-columns: auto var(--width-desktop) auto;
+}
+
+#section-06 > div {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin-top: 72rem;
+  margin-bottom: 99rem;
+  display: grid;
+  grid-template-columns: 417rem auto;
+  gap: 134rem;
+}
+
+.s06 {
+  width: 416rem;
+}
+
+.s06 > h2 {
+  font-size: var(--fontsize-heading-m);
+  margin-bottom: 30rem;
+}
+
+.s06 > p:first-of-type {
+  font-size: var(--fontsize-body-l);
+  margin-bottom: 40rem;
+}
+
+.contact-us {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-us div {
+  width: 196rem;
+  height: 166rem;
+  border: 1px solid var(--color-gray-300);
+  border-radius: 8rem;
+  padding: 20rem;
+}
+
+.contact-us * {
+  font-size: var(--fontsize-body-s);
+}
+
+.contact-us > div > p {
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: top;
+  padding-top: 50rem;
+  padding-bottom: 20rem;
+}
+
+.contact-us > div > #call {
+  background-image: url('../assets/phone-call.svg');
+}
+
+.contact-us > div > #chat {
+  background-image: url('../assets/speech-bubble.svg');
+}
+
+.contact-us > div > a {
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+  padding-right: 25rem;
+}
+
+.contact-us > div > #call ~ a,
+.contact-us > div > #call ~ a:visited {
+  color: var(--color-primary);
+  background-image: url('../assets/arrow-right-purple.svg');
+}
+
+.contact-us > div > #chat ~ a,
+.contact-us > div > #chat ~ a:visited {
+  color: var(--color-success);
+  background-image: url('../assets/arrow-right-green.svg');
+}
+
+details {
+  box-shadow: 0rem 2rem 3rem 0rem rgb(0 0 0 / 3%);
+  border-radius: 8rem;
+  min-height: 68rem;
+  margin-bottom: 14rem;
+  padding-left: 24rem;
+  padding-right: 24rem;
+}
+
+details > summary {
+  font-weight: var(--fontweight-semibold);
+  color: var(--color-gray-900);
+  list-style: none;
+  line-height: 16rem;
+  padding-top: 24rem;
+  height: 68rem;
+  background-image: url('../assets/arrow-down.svg');
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+  cursor: pointer; 
+}
+
+details > div {
+  font-size: var(--fontsize-body-s);
+  line-height: 160%;
+  color: var(--color-gray-700);
+  min-height: 88rem;
+  padding-bottom: 20rem;
+}
+

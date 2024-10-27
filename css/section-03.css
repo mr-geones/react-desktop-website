@@ -1,0 +1,22 @@
+#section-03 {
+  background-image: url('../assets/carousel-hq.webp');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 180rem;
+}
+
+#section-03 div {
+  display: grid;
+  grid-template-rows: 883rem 46rem 148rem;
+  grid-template-columns: 636rem;
+  justify-content: center;
+  text-align: center;
+}
+
+#section-03 h2 {
+  padding-top: 80rem;
+}
+
+#section-03 h3 {
+  font-size: var(--fontsize-heading-s);
+}

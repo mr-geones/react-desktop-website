@@ -1,0 +1,92 @@
+#section-01 {
+  background-image: url('../assets/gradient-bg.svg');
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-position-y: bottom;
+  display: grid;
+  grid-template-columns: auto var(--width-desktop) auto;
+}
+
+#section-01 .s01 {
+  display: grid;
+  grid-template-rows: 318rem 58rem 100rem 324rem;
+  justify-content: left;
+  align-items: end;
+  background-image: url('../assets/iphones-dropshadow-hq.webp');
+	background-repeat: no-repeat;
+	background-position-x: right;
+	background-position-y: bottom;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+#section-01 .s01 h1,
+#section-01 .s01 p,
+#section-01 .s01 div {
+  width: 540rem;
+}
+
+#section-01 .s1 h1 {
+  margin-bottom: 18rem;
+}
+
+#download {
+  display: flex;
+  justify-content: left;
+  gap: 24rem;
+}
+
+/*-----------------------------------------------------------------------
+/// Styles for text content
+-----------------------------------------------------------------------*/
+
+#section-01 h1 {
+  font-size: var(--fontsize-heading-xl);
+}
+#section-01 p {
+  font-size: var(--fontsize-body-l);
+}
+
+/*-----------------------------------------------------------------------
+/// Styles for AppStore and Google Play
+-----------------------------------------------------------------------*/
+
+.app {
+  display: inline-block;
+  background-color: var(--color-black);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  width: 180rem;
+  height: 52rem;
+  border-radius: 8rem;
+  text-indent: -9999px;
+}
+.app__appstore {
+  background-image: url('../assets/appstore-light.svg');
+}
+.app__googleplay {
+  background-image: url('../assets/googleplay-light.svg');
+}
+
+/*-----------------------------------------------------------------------
+/// Styles for the link Discover More
+-----------------------------------------------------------------------*/
+
+.link__discover_more {
+  color: var(--color-gray-700);
+  font-size: var(--fontsize-body-s);
+  display: block;
+  width: 155rem;
+  height: 67rem;
+  align-content: center;
+  text-align: right;
+  background-image: url('../assets/arrow-down-black-w-circle-bg.svg');
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: center;
+  margin-bottom: 64rem;
+}
+.link__discover_more:visited {
+ color: var(--color-gray-700);
+}
