@@ -1,158 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
-@import url('../css/header.css');
-@import url('../css/section-01.css');
-@import url('../css/section-02.css');
-@import url('../css/section-03.css');
-@import url('../css/section-04.css');
-@import url('../css/section-05.css');
-@import url('../css/section-06.css');
-@import url('../css/footer.css');
-
 :root {
-    --fontsize-default: 1px;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
 
-    --fontsize-heading-xl: 56rem;
-    --fontsize-heading-l: 40rem;
-    --fontsize-heading-m: 32rem;
-    --fontsize-heading-s: 24rem;
-    --fontsize-heading-xs: 20rem;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
 
-    --fontsize-body-l: 18rem;
-    --fontsize-body-m: 16rem;
-    --fontsize-body-s: 14rem;
-
-    --fontweight-regular: 400;
-    --fontweight-semibold: 500;
-    --fontweight-bold: 600;
-    --fontweight-extrabold: 800;
-
-    --background-color: #0B0F19;
-
-    --color-black: #000;
-    --color-white: #FFF;
-    --color-success: #22C55E;
-    --color-error: #EF4444;
-    --color-warning: #EF9A44;
-    --color-info: #4C82F7;
-    --color-primary: #6366F1;
-
-    --color-gray-900: #0B0F19;
-    --color-gray-800: #33354D;
-    --color-gray-700: #565973;
-    --color-gray-600: #9397AD;
-    --color-gray-500: #B4B7C9;
-    --color-gray-400: #D4D7E5;
-    --color-gray-300: #E2E5F1;
-    --color-gray-100: #F3F6FF;
-
-    --gradient-start: #6366F1;
-    --gradient-middle: #8B5CF6;
-    --gradient-end: #D946EF;
-    
-    --width-desktop: 1296rem;
-    --height-xxl: 1304rem;
-    --height-xl: 1176rem;
-    --height-l: 1104rem;
-    --height-m: 1077rem;
-    --height-s: 876rem;
-    --height-xs: 542rem;
-    --height-xxs: 76rem;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/*-----------------------------------------------------------------------
-/// Reset styles
------------------------------------------------------------------------*/
-
-*, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
-/*-----------------------------------------------------------------------
-/// Global styles
------------------------------------------------------------------------*/
-
-*{
-    border: 0rem dashed lightgray; /* REMOVE WHEN DONE */
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
 }
-
-html {
-    font-family: 'Manrope', sans-serif;
-    font-weight: var(--fontweight-regular);
-    font-size: var(--fontsize-default);
-    font-style: normal;
-    font-optical-sizing: auto;
-    color: var(--color-gray-700);
+a:hover {
+  color: #535bf2;
 }
 
 body {
-    font-size: var(--fontsize-body-m);
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
 }
 
-/*-----------------------------------------------------------------------
-/// Headlines
------------------------------------------------------------------------*/
-
-h1, h2, h3 {
-    color: var(--color-gray-900);
-    font-weight: var(--fontweight-extrabold);
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
 }
 
-
-h2 {
-    font-size: var(--fontsize-heading-l);
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
 }
 
-/*-----------------------------------------------------------------------
-/// Anchors
------------------------------------------------------------------------*/
-
-a,
-a:visited {
-    text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
-}
-nav a, 
-nav a:visited {
-    color: var(--color-gray-800);
-}
-
-/*-----------------------------------------------------------------------
-/// Global button style
------------------------------------------------------------------------*/
-
-.button {
-    background-color: var(--color-primary);
-    color: var(--color-white);
-    font-size: var(--fontsize-body-s);
-    font-weight: var(--fontweight-semibold);
-    align-content: center;
-    
-}
-
-/*-----------------------------------------------------------------------
-/// Background color for certain sections
------------------------------------------------------------------------*/
-
-.bg__dark {
-    background-color: var(--color-gray-100);
-}
-
-.bg__light {
-    background-color: hsla(0, 100%, 100%, 4%)
-}
-
-.dark-theme {
-    background-color: var(--color-gray-900);
-}
-
-.light-theme {
-    background-color: var(--color-white);
-}
-
-.App {
-    background-color: var(--background-color);
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
 }
