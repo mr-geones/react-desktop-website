@@ -2,14 +2,14 @@ import React from "react";
 
 const AccordionItem = ({item}) => {
   return (
-    <div className='accordion-item'>
-      <div className='item-titlebar'>
-        <h3>{item.title}</h3>
-        <div className='btn btn-acordion'>
-          <i className='item-icon fa-solid fa-chevron-down'></i>
-        </div>
+    <div className='faq-card'>
+      <div className='question'>
+        <p>{item.title}</p>
+        <button className='btn-round'>
+          <i className='fa-solid fa-chevron-down'></i>
+        </button>
       </div>
-      <p className='item-content'>{item.content}</p>
+      <div className="answer">{item.content}</div>
     </div>
   );
 };

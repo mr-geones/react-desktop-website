@@ -35,7 +35,7 @@ const Section06 = () => {
           </div>
         </div>
 
-        <div id='faq' className='accordion'>
+        <div className='faq'>
           {accordions.map(item => (
             <AccordionItem key={item.id} item={item} />
           ))}
