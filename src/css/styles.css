@@ -87,7 +87,6 @@
   --header-bg: var(--c-white);
   --toggle-bg: var(--c-gray-600);
   --toggle-circle: var(--c-white);
- 
 
   --c-dark: var(--c-gray-100);
   --c-header: var(--c-gray-900);
@@ -114,6 +113,8 @@
 
   --c-btn-bg: var(--c-gray-100);
   --c-btn: var(--c-gray-900);
+
+  --shadow-faq: 0px 2px 3px 3px rgb(0 0 0 / 3%);
 }
 
 :root.dark {
@@ -121,8 +122,6 @@
   --text-primary: var(--c-gray-100);
   --header-bg: var(--c-gray-900);
   --toggle-bg: var(--c-primary);
-
-
 
   --c-dark: var(--c-transparent);
   --c-header: var(--c-white);
@@ -147,7 +146,9 @@
   --shadow-quote-icon: 0px 5px 5px 0px rgb(255 255 255 / 5%);
 
   --c-btn-bg: rgba(255, 255, 255, 0.04);
-  --c-btn: var(--c-white)
+  --c-btn: var(--c-white);
+
+  --shadow-faq: 0px 2px 3px 0px rgb(0 0 0 / 0%);
 }
 
 /*-----------------------------------------------------------------------
@@ -692,7 +693,7 @@ input[type="checkbox"] {
 } */
 .star-rating {
   margin: -1rem 0 2rem 0;
- }
+}
 .star {
   color: var(--c-warning);
 }
@@ -707,7 +708,7 @@ input[type="checkbox"] {
   align-items: center;
   position: relative;
   top: -45px;
-  box-shadow: var(--shadow-quote-icon)
+  box-shadow: var(--shadow-quote-icon);
 }
 .fa-quote-left {
   color: var(--c-white);
@@ -866,35 +867,40 @@ input[type="checkbox"] {
   background-image: url("../assets/arrow-right-green.svg");
 }
 
-
+.faq-card {
+  box-shadow: var(--shadow-faq);
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  background-color: var(--c-transparent);
+}
 .question {
   font-size: var(--fs-m);
-  font-weight: var(--fw-medium);
+  font-weight: var(--fw-semibold);
   color: var(--c-author-name);
   /* padding-top: 24px; */
-  /* height: 68px; */
+  height: 68px;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: .7rem;
+  padding: 0 3rem;
 }
-.question:hover .btn-round{
+/* .question:hover .btn-round {
   background-color: var(--c-gray-500);
-}
+} */
 .answer {
   font-size: var(--fs-s);
   line-height: 160%;
   color: var(--c-author-comment);
-  padding: 0 .7rem;
+  padding: 0 3rem;
   display: grid;
   grid-template-rows: 0fr;
   overflow: hidden;
-/*   transition: grid-template-rows 0.3s, padding 0.3s; */
+  /*   transition: grid-template-rows 0.3s, padding 0.3s; */
 }
 .open .answer {
   grid-template-rows: 1fr;
-  padding: .7rem;
+  padding: 0 3rem 2rem 3rem;
 }
 .open .btn-round {
   background-color: var(--c-primary);
