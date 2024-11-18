@@ -890,7 +890,7 @@ input[type="checkbox"] {
   display: grid;
   grid-template-rows: 0fr;
   overflow: hidden;
-  transition: grid-template-rows 0.3s, padding 0.3s;
+/*   transition: grid-template-rows 0.3s, padding 0.3s; */
 }
 .open .answer {
   grid-template-rows: 1fr;
@@ -915,7 +915,7 @@ input[type="checkbox"] {
   cursor: pointer;
   height: 36px;
   width: 36px;
-  transition: all 0.3s;
+  /* transition: all 0.3s; */
 }
 
 /* .details {
