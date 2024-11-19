@@ -1,0 +1,21 @@
+import React from "react";
+
+const Footer = () => {
+  return (
+    <footer>
+      <div className='bg__dark'>
+        <h2>Subscribe to our newsletter to stay informed about latest updates</h2>
+        <form noValidate>
+          <label htmlFor='subscribe'>Your Email</label>
+          <input type='email' className="error" name='email' id='subscribe' placeholder='&nbsp; &nbsp; &nbsp; Your Email' required />
+          <input type='submit' value='Subscribe' className='subscribe-button' />
+          <div className='validation-message error-message'>Looks good!</div>
+          {/* <div className='validation-message error-message'>Please provide a valid input.</div> */}
+        </form>
+      </div>
+      <p>&copy; 2024 Silicon. All rights reserved. Credit MadrasThemes</p>
+    </footer>
+  );
+};
+
+export default Footer;

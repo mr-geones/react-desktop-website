@@ -22,6 +22,7 @@
   --fs-l: 1.8rem;
   --fs-m: 1.6rem;
   --fs-s: 1.4rem;
+  --fs-xs: 1.2rem;
 
   /* NAVIGATION TEXT */
 
@@ -115,6 +116,9 @@
   --c-btn: var(--c-gray-900);
 
   --shadow-faq: 0px 2px 3px 3px rgb(0 0 0 / 3%);
+
+  --error-bg: rgba(239, 68, 68, 0.12);
+  --success-bg: rgba(34, 197, 94, 0.12);
 }
 
 :root.dark {
@@ -1033,6 +1037,9 @@ footer input:first-of-type::placeholder {
 .subscribe-button {
   background-color: var(--c-primary);
 }
+form {
+  padding-top: 20px;
+}
 
 /* #subscribe:invalid {
   border: 1px solid var(--c-error);
@@ -1040,10 +1047,46 @@ footer input:first-of-type::placeholder {
   background-repeat: no-repeat;
   background-position: calc(330px - 30px) center;
 }
-
 #subscribe:valid:not(:placeholder-shown) {
   border: 1px solid var(--c-success);
   background-image: url("../assets/icon-success.svg");
   background-repeat: no-repeat;
   background-position: calc(330px - 30px) center;
 } */
+
+.validation {
+  display: auto;
+  font-size: var(--fs-xs);
+  padding-left: 18px;
+  border-radius: 4px;
+}
+.error-message {
+  /* background-color: var(--error-bg); */
+  color: var(--c-error);
+  text-indent: -9999px;
+}
+.success-message {
+  background-color: var(--success-bg);
+  color: var(--c-success);
+}
+.display-error {
+  text-indent: 0;
+}
+.error {
+  border: 3px solid var(--c-error);
+}
+
+.thank-you {
+  margin-top: 1.5rem;
+}
+.go-back {
+  width: 50px;
+  padding: 3px;
+  margin-top: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.sub-container {
+  width: calc(330px + 142px);
+}
